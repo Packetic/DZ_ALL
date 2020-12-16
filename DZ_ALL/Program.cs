@@ -1,12 +1,15 @@
 ﻿using System;
 
-namespace DZ_ALL
+namespace DZ_5
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Vse dz v otdel'nych vetkah");
+            BiSolver bi1 = new BiSolver();
+            bi1.GetKoeffs();
+            bi1.Solve();
+            bi1.PrintRoots();
         }
     }
 }
